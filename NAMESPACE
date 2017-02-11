@@ -1,11 +1,7 @@
-importFrom("fMultivar", rmvst)
-
-importFrom("MCMCpack", xpnd)
- 
-importFrom("car",linearHypothesis)
-importFrom("moments",skewness,kurtosis)
+export("StVAR","StDLRM","StAR")
+importFrom("ADGofTest",ad.test)
+importFrom("stats",embed)
 importFrom("numDeriv",jacobian)
-exportPattern("StVAR")
-
-
-
+importFrom("MCMCpack",vech,xpnd)
+importFrom("matlab",ones)
+importFrom("stats", "fitted", "optim", "pt", "runif")
